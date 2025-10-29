@@ -1,26 +1,49 @@
-# ⭐ React Smart Rating
+# ⭐️ React Smart Rating
 
-A **modern**, **customizable**, and **lightweight** React star rating component with fractional ratings (like 4.5), hover effects, and custom icons. Perfect for `reviews`, `feedback forms`, and `product ratings`. Built with TypeScript, supports **custom icon** and TailwindCSS styling.
+[![npm version](https://img.shields.io/npm/v/react-smart-rating.svg?color=blue)](https://www.npmjs.com/package/react-smart-rating)
+[![npm downloads](https://img.shields.io/npm/dw/react-smart-rating.svg?color=brightgreen)](https://www.npmjs.com/package/react-smart-rating)
+[![license](https://img.shields.io/npm/l/react-smart-rating.svg?color=yellow)](./LICENSE)
+[![React](https://img.shields.io/badge/react-18%2B-blue.svg)](https://react.dev/)
+[![TypeScript](https://img.shields.io/badge/built%20with-Typescript-3178C6.svg)](https://www.typescriptlang.org/)
+
+A lightweight, fully customizable **React rating component** with support for **fractional ratings**, **custom icons**, **color customization**, and **read-only mode**.  
+Perfect for product reviews, feedback forms, or any app that needs a modern, flexible rating UI.
 
 ---
 
-## 🧩 Installation
+## 🚀 Features
+
+-   ⭐ **Fractional Ratings** (e.g. `4.3`, `2.7`)
+-   ⚙️ **Customizable Icons** — use any React icon (Lucide, Heroicons, FontAwesome)
+-   🎨 **Custom Colors & Sizes**
+-   🔒 **Read-only Mode**
+-   🧩 **TypeScript Support**
+-   💡 **Lightweight** — under 8KB and no external dependencies (except React)
+
+---
+
+## 📦 Installation
+
+React Smart Rating works seamlessly with npm, yarn, and pnpm — choose your favorite package manager 👇
+
+| Package Manager | Command                        |
+| --------------- | ------------------------------ |
+| **npm**         | npm install react-smart-rating |
+| **pnpm**        | pnpm add react-smart-rating    |
+| **yarn**        | yarn add react-smart-rating    |
+
+## 🧠 Quick Usage
 
 ```bash
-  npm install react-smart-rating
-```
-
-## 🚀 Usage Example
-
-```
   import { ReactSmartRating } from "react-smart-rating";
   import { Heart } from "lucide-react";
 
   export default function Example() {
+    const [rating, setRating]= useState(5)
     return (
       <div>
         {/* Default */}
-        <ReactSmartRating initialRating={3.5} onChange={(v) => console.log(v)} />
+        <ReactSmartRating initialRating={rating} onChange={(v) => setRating(v)} />
 
         {/* Half-precision */}
         <ReactSmartRating precision={0.5} />
@@ -29,23 +52,34 @@ A **modern**, **customizable**, and **lightweight** React star rating component 
         <ReactSmartRating icon={Heart} activeColor="red" precision={0.5} />
 
         {/* Read only */}
-        <ReactSmartRating initialRating={4.8} readOnly />
+        <ReactSmartRating initialRating={rating} readOnly />
       </div>
     );
   }
-
 ```
 
 ## ⚙️ Props
 
-| Prop            | Type                     | Default   | Description                       |
-| --------------- | ------------------------ | --------- | --------------------------------- |
-| `totalStars`    | number                   | 5         | Number of icons                   |
-| `initialRating` | number                   | 0         | Can be fractional (e.g. 3.5)      |
-| `readOnly`      | boolean                  | false     | Disables user interaction         |
-| `onChange`      | (rating: number) => void | —         | Called when rating changes        |
-| `icon`          | React.ElementType        | `Star`    | Custom icon component             |
-| `activeColor`   | string                   | `#facc15` | Color for filled icons            |
-| `inactiveColor` | string                   | `#d1d5db` | Color for empty icons             |
-| `size`          | number                   | 24        | Icon size in pixels               |
-| `precision`     | number                   | 0.5       | Step size for fractional rounding |
+| Prop            | Type                       | Default   | Description                         |
+| --------------- | -------------------------- | --------- | ----------------------------------- |
+| `totalStars`    | `number`                   | `5`       | Total number of rating icons        |
+| `initialRating` | `number`                   | `0`       | Initial (float) rating value        |
+| `readOnly`      | `boolean`                  | `false`   | Disable interactions if true        |
+| `onChange`      | `(rating: number) => void` | —         | Callback fired when rating changes  |
+| `icon`          | `React.ElementType`        | `Star`    | Custom icon component               |
+| `activeColor`   | `string`                   | `#facc15` | Color for filled stars              |
+| `inactiveColor` | `string`                   | `#d1d5db` | Color for empty stars               |
+| `size`          | `number`                   | `24`      | Icon size in pixels                 |
+| `step`          | `number`                   | `1`       | Rating step precision (1, 0.5, 0.1) |
+
+## 🧩 Example with Fractional Rating
+
+```bash
+<RatingStar totalStars={5} initialRating={3.7} step={0.1} readOnly />
+```
+
+## 🪶 License
+
+This project is licensed under the MIT License — see the [LICENSE](https://github.com/NiharMondal/react-smart-rating/tree/main?tab=MIT-1-ov-file) file for details.
+
+Made with ❤️ by [Nihar Mondal](https://www.github.com/NiharMondal)
