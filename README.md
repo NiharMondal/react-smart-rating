@@ -1,7 +1,6 @@
 # ⭐ React Smart Rating
 
-A **modern**, **fractional**, and **customizable** rating component for React.  
-Built with **TypeScript** + **Lucide Icons**, fully supports **half or decimal ratings** and **custom icons**.
+A **modern**, **customizable**, and **lightweight** React star rating component with fractional ratings (like 4.5), hover effects, and custom icons. Perfect for `reviews`, `feedback forms`, and `product ratings`. Built with TypeScript, supports **custom icon** and TailwindCSS styling.
 
 ---
 

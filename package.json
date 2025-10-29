@@ -1,14 +1,48 @@
 {
   "name": "react-smart-rating",
-  "version": "1.0.0",
+  "version": "1.2.0",
   "type": "module",
   "main": "dist/index.js",
-  "description": "A customizable React rating component with fractional and custom icon support.",
+  "description": "A modern, customizable, and lightweight React star rating component with fractional ratings (like 4.5), hover effects, and custom icons. Perfect for reviews, feedback forms, and product ratings. Built with TypeScript and supports TailwindCSS styling.",
   "module": "dist/index.mjs",
   "types": "dist/index.d.ts",
   "files": ["dist"],
-  "keywords": ["react", "rating", "star", "fractional", "icon", "component", "typescript", "react rating", "react-rating", "react smart rating","react-smart-rating"],
+  
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/NiharMondal/react-smart-rating.git"
+  },
+  "homepage": "https://github.com/NiharMondal/react-smart-rating#readme",
+  "bugs": {
+    "url": "https://github.com/NiharMondal/react-smart-rating/issues"
+  },
+  "keywords": [
+    "react",
+    "react-component",
+    "react-star-rating",
+    "react-rating",
+    "rating-component",
+    "star-rating",
+    "rating-stars",
+    "fractional-rating",
+    "interactive-rating",
+    "custom-rating",
+    "react-ui",
+    "tailwindcss",
+    "typescript",
+    "lucide-react",
+    "feedback-widget",
+    "react-review",
+    "rating-system",
+    "react-smart-rating",
+    "nextjs-rating",
+    "next-rating",
+    "next-smart-rating",
+    "nextjs-smart-rating"
+   
+  ],
+  "author": "Nihar Mondal <developernihar@gmail.com>",
   "scripts": {
     "dev": "vite",
     "build": "tsup src/index.ts --format esm,cjs --dts --tsconfig tsconfig.app.json",
