@@ -11,7 +11,7 @@ export interface RatingStarProps {
 	activeColor?: string;
 	inactiveColor?: string;
 	size?: number;
-	precision?: number; // e.g., 0.5 or 0.1
+	step?: number; // e.g., 0.5 or 0.1
 }
 
 export const ReactSmartRating: React.FC<RatingStarProps> = ({
@@ -23,14 +23,17 @@ export const ReactSmartRating: React.FC<RatingStarProps> = ({
 	activeColor = "#facc15",
 	inactiveColor = "#d1d5db",
 	size = 24,
-	precision = 0.5,
+	step = 0.5,
 }) => {
 	const [hovered, setHovered] = useState<number | null>(null);
 	const [rating, setRating] = useState(initialRating);
 	const containerRef = useRef<HTMLDivElement>(null);
 
-	const roundToPrecision = (value: number) =>
-		Math.round(value / precision) * precision;
+	const roundToPrecision = (value: number) => {
+		const res = Math.round(value / step) * step;
+
+		return parseFloat(res.toFixed(2));
+	};
 
 	const handleClick = (
 		event: React.MouseEvent<HTMLDivElement>,

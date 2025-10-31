@@ -32,6 +32,10 @@ React Smart Rating works seamlessly with npm, yarn, and pnpm — choose your fav
 | **pnpm**        | pnpm add react-smart-rating    |
 | **yarn**        | yarn add react-smart-rating    |
 
+## 📸 Demo
+
+![preview](public/preview.png)
+
 ## 🧠 Quick Usage
 
 ```bash
