@@ -74,7 +74,7 @@ React Smart Rating works seamlessly with npm, yarn, and pnpm — choose your fav
 | `activeColor`   | `string`                   | `#facc15` | Color for filled stars              |
 | `inactiveColor` | `string`                   | `#d1d5db` | Color for empty stars               |
 | `size`          | `number`                   | `24`      | Icon size in pixels                 |
-| `step`          | `number`                   | `1`       | Rating step precision (1, 0.5, 0.1) |
+| `step`          | `number`                   | `0.5`     | Rating step precision (1, 0.5, 0.1) |
 
 ## 🧩 Example with Fractional Rating
 
