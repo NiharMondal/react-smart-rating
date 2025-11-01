@@ -2,7 +2,7 @@
 import React, { useState, useRef } from "react";
 import { Star } from "lucide-react";
 
-export interface RatingStarProps {
+export interface ReactSmartRatingProps {
 	totalStars?: number;
 	initialRating?: number;
 	readOnly?: boolean;
@@ -14,7 +14,7 @@ export interface RatingStarProps {
 	step?: number; // e.g., 0.5 or 0.1
 }
 
-export const ReactSmartRating: React.FC<RatingStarProps> = ({
+export const ReactSmartRating: React.FC<ReactSmartRatingProps> = ({
 	totalStars = 5,
 	initialRating = 0,
 	readOnly = false,
@@ -23,7 +23,7 @@ export const ReactSmartRating: React.FC<RatingStarProps> = ({
 	activeColor = "#facc15",
 	inactiveColor = "#d1d5db",
 	size = 24,
-	step = 0.5,
+	step = 1,
 }) => {
 	const [hovered, setHovered] = useState<number | null>(null);
 	const [rating, setRating] = useState(initialRating);

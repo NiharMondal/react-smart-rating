@@ -1,6 +1,6 @@
 {
   "name": "react-smart-rating",
-  "version": "2.0.0",
+  "version": "3.0.0",
   "type": "module",
   "main": "dist/index.js",
   "description": "A modern, customizable, and lightweight React star rating component with fractional ratings (like 4.5), hover effects, and custom icons. Perfect for reviews, feedback forms, and product ratings. Built with TypeScript and supports TailwindCSS styling.",
@@ -18,6 +18,9 @@
     "url": "https://github.com/NiharMondal/react-smart-rating/issues"
   },
   "keywords": [
+    "react-smart-rating",
+    "next-smart-rating",
+    "nextjs-smart-rating",
     "react",
     "react-component",
     "react-star-rating",
@@ -35,12 +38,8 @@
     "feedback-widget",
     "react-review",
     "rating-system",
-    "react-smart-rating",
     "nextjs-rating",
-    "next-rating",
-    "next-smart-rating",
-    "nextjs-smart-rating"
-   
+    "next-rating"  
   ],
   "author": "Nihar Mondal <developernihar@gmail.com>",
   "scripts": {

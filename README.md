@@ -49,11 +49,11 @@ React Smart Rating works seamlessly with npm, yarn, and pnpm — choose your fav
         {/* Default */}
         <ReactSmartRating initialRating={rating} onChange={(v) => setRating(v)} />
 
-        {/* Half-precision */}
-        <ReactSmartRating precision={0.5} />
+        {/* Half-step */}
+        <ReactSmartRating step={0.5} />
 
         {/* Custom icon */}
-        <ReactSmartRating icon={Heart} activeColor="red" precision={0.5} />
+        <ReactSmartRating icon={Heart} activeColor="red" step={0.5} />
 
         {/* Read only */}
         <ReactSmartRating initialRating={rating} readOnly />
@@ -64,17 +64,17 @@ React Smart Rating works seamlessly with npm, yarn, and pnpm — choose your fav
 
 ## ⚙️ Props
 
-| Prop            | Type                       | Default   | Description                         |
-| --------------- | -------------------------- | --------- | ----------------------------------- |
-| `totalStars`    | `number`                   | `5`       | Total number of rating icons        |
-| `initialRating` | `number`                   | `0`       | Initial (float) rating value        |
-| `readOnly`      | `boolean`                  | `false`   | Disable interactions if true        |
-| `onChange`      | `(rating: number) => void` | —         | Callback fired when rating changes  |
-| `icon`          | `React.ElementType`        | `Star`    | Custom icon component               |
-| `activeColor`   | `string`                   | `#facc15` | Color for filled stars              |
-| `inactiveColor` | `string`                   | `#d1d5db` | Color for empty stars               |
-| `size`          | `number`                   | `24`      | Icon size in pixels                 |
-| `step`          | `number`                   | `0.5`     | Rating step precision (1, 0.5, 0.1) |
+| Prop            | Type                       | Default   | Description                        |
+| --------------- | -------------------------- | --------- | ---------------------------------- |
+| `totalStars`    | `number`                   | `5`       | Total number of rating icons       |
+| `initialRating` | `number`                   | `0`       | Initial (float) rating value       |
+| `readOnly`      | `boolean`                  | `false`   | Disable interactions if true       |
+| `onChange`      | `(rating: number) => void` | —         | Callback fired when rating changes |
+| `icon`          | `React.ElementType`        | `Star`    | Custom icon component              |
+| `activeColor`   | `string`                   | `#facc15` | Color for filled stars             |
+| `inactiveColor` | `string`                   | `#d1d5db` | Color for empty stars              |
+| `size`          | `number`                   | `24`      | Icon size in pixels                |
+| `step`          | `number`                   | `1`       | Rating step step (1, 0.5, 0.1)     |
 
 ## 🧩 Example with Fractional Rating
 

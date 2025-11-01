@@ -1,2 +1,2 @@
-export { ReactSmartRating } from "./App";
-export type { RatingStarProps } from "./App";
+export { ReactSmartRating } from "./ReactSmartRating";
+export type { ReactSmartRatingProps } from "./ReactSmartRating";
